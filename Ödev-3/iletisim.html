@@ -4,18 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>İletişim</title>
+    <style>
+        header{
+            width: 50%;
+            height: 100px;
+            float: left;
+            text-align: center;
+            color: bla;
+            margin: 0px;
+            padding: 0px;
+        }
+        nav{
+            width: 50%;
+            height: 80px;
+            float: right;
+            text-align: center;
+            margin-top: 20px;
+            padding: 0%;
+        }
+        nav a{
+            text-decoration: none;
+            color: black;
+            padding: 50px;
+            font-size: 20px;
+        } 
+        .article1{
+            padding-top: 50px;
+        }
+        .submit{
+            width: 100px; 
+            background-color: #04AA6D; 
+            color: #fff;
+        }
+    </style>
 </head>
 <body>
  <!-- Header -->
  <header>
-    <h1>Mustafa Gündüz</h1>
+    <h1>İletişim</h1>
  </header>
-<!-- Nav-bar -->
+ <!-- Nav-bar -->
  <nav>
      <a href="index.html">Ana Sayfa</a>
      <a href="hakkinda.html">Hakkında</a>
      <a href="iletisim.html">İletişim</a>
      <a href="servisler.html">Servisler</a>
-  </nav>
+  </nav> <hr>
+  <!-- Articles -->
+   <article>
+    <h2>İletişim Bilgilerimiz</h2>
+    <ul>
+        <li><b>Telefon</b></li>
+        <p>0555 123 45 67</p>
+        <li><b>Adres</b></li>
+        <p>A Mahallesi, B Caddesi, 1. Sokak, No: 1/1 Eskişehir</p>
+        <li><b>E-posta</b></li>
+        <p>mstfgndz26@gmail.com</p>
+    </ul>
+    <br><br><br>
+    <!--Form Oluşturma Örneği-->
+    <fieldset style="text-align: center;">
+        <legend style="font-size: 20px;">Bizimle İletişime Geçmek İçin Formu Doldurabilirsiniz </legend>
+        <form>
+            <label for="ad">Adınız:</label> <br>
+            <input type="text" id="ad" name="ad" placeholder="Adınızı Giriniz" required>
+            <br><br>
+
+            <label for="ad">Soyadınız:</label> <br>
+            <input type="text" id="ad" name="ad" placeholder="Adınızı Giriniz" required>
+            <br><br>
+
+            <label for="email">E-posta :</label> <br>
+            <input type="email" id="Email" name="Email" placeholder="e-mail Adresiniz" required>
+            <br> <br>
+
+            <label for="mesaj">Mesajınız:</label> <br>
+            <textarea id="mesaj" name="mesaj" placeholder="Mesaj..." style="width: 300px; height: 100px;" required></textarea>
+            <br><br>
+
+            <button type="submit" class="submit">Gönder</button>
+        </form>
+    </fieldset>
+   </article>
 </body>
 </html>
